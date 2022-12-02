@@ -24,7 +24,7 @@ public class Baloon extends Aircraft implements Flyable {
                     this.coordinates.getLatitude(),
                     this.coordinates.getHeight() + 4 > 100 ? 100 : this.coordinates.getHeight() + 4
                 );
-                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): This is hot.");
+                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): This is hot. So I'm rising!!!");
                 AvajLauncher.writer.newLine();
                 break;
             case "RAIN":
@@ -33,7 +33,7 @@ public class Baloon extends Aircraft implements Flyable {
                     this.coordinates.getLatitude(),
                     this.coordinates.getHeight() - 5
                 );
-                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): It's raining. Better watch out for lightings.");
+                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): It's raining. I need umbrella");
                 AvajLauncher.writer.newLine();
                 break;
             case "FOG":
@@ -42,7 +42,7 @@ public class Baloon extends Aircraft implements Flyable {
                     this.coordinates.getLatitude(),
                     this.coordinates.getHeight() - 3
                 );
-                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): It's foggy.");
+                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): It's foggy. I can't see anything!");
                 AvajLauncher.writer.newLine();
                 break;
             case "SNOW":
@@ -51,7 +51,7 @@ public class Baloon extends Aircraft implements Flyable {
                     this.coordinates.getLatitude(),
                     this.coordinates.getHeight() - 15
                 );
-                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): It's snowing. We're gonna crash.");
+                AvajLauncher.writer.write("Baloon#" + this.name + "(" + this.id + "): It's snowing. Freezing! I need blanket!");
                 AvajLauncher.writer.newLine();
                 break;
         }
